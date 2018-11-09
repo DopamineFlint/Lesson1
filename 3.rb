@@ -1,26 +1,29 @@
 puts "Введите первую сторону треугольника: "
-a = gets.chomp.to_i
+a = gets.chomp.to_f
 puts "Введите вторую сторону треугольника: "
-b = gets.chomp.to_i
+b = gets.chomp.to_f
 puts "Введите третью сторону треугольника: "
-c = gets.chomp.to_i
+c = gets.chomp.to_f
 
-a = a**2
-b = b**2
-c = c**2
+a2 = a**2
+b2 = b**2
+c2 = c**2
 
-if (a + b) == c
+k1 = 0
+k2 = 0
+
+k1, k2 = [a2, b2, c2].min(2)
+
+h = [a2, b2, c2].max
+
+if a2 + b2 == c2
 	puts "Треугольник прямоугольный. "
 end
 
-if a == b && a == c
+if h == a2 && h == b2 && h == c2
 	print "Треугольник равонсторонний и равнобедренный"
-elsif a == b && a != c
-	print "Стороны a и b равны"
-elsif a == c && a != b
-	print "Стороны а и с равны"
-elsif b == c && b != a
-	print "Стороны b и с равны"
+elsif k1 == k2
+	print "Обе стороны у треугольника равны"
 else
 	print "Равных сторон нет"
 end

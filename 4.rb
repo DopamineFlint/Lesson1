@@ -5,10 +5,7 @@ b = gets.chomp.to_f
 puts "Введите третье число"
 c = gets.chomp.to_f
 
-d = b**2 - 4*a*c
-
-x1 = 0
-x2 = 0
+d = b**2 - 4 * a * c
 
 puts "Дескриминант = #{d}"
 puts " "

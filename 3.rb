@@ -9,7 +9,11 @@ a2 = a**2
 b2 = b**2
 c2 = c**2
 
-if a2 + b2 == c2 || a2 + c2 == b2 || b2 + c2 == a2
+array = [a2, b2, c2]
+k1, k2 = array.min(2)
+h = array.max
+
+if k1 + k2 == h
   puts "Треугольник прямоугольный. "
 end
 
